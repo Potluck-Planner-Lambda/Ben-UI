@@ -189,7 +189,6 @@ footer {
   margin: 0 10px;
 }
 .header {
-  align-content: unset;
   min-height: 100vh;
   background: url("../img/buffet.png");
   background-size: cover;
@@ -197,28 +196,29 @@ footer {
   background-attachment: fixed;
 }
 .header .wrapper {
-  margin: 100px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  margin-top: 100px;
 }
 .header .wrapper .content {
+  padding: 20px 40px;
   background: rgba(235, 237, 241, 0.75);
-  padding: 20px 5%;
-  border-radius: 10px;
+  max-width: 80%;
+}
+.header .wrapper .content h1 {
+  border-bottom: 3px dashed #EF4723;
+  margin-bottom: 20px;
 }
 .header .wrapper .content p {
+  text-align: right;
   color: black;
 }
 .details {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .details div {
-  width: 25%;
-  margin: 40px 12.5%;
+  width: 35%;
   padding: 10px;
   border: 1px solid black;
-  border-radius: 10px;
 }

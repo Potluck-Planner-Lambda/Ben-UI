@@ -22,7 +22,6 @@
 }
 
 .header {
-    align-content: unset;
     min-height: 100vh;
     background: url("../img/buffet.png");
     background-size: cover;
@@ -30,15 +29,20 @@
     background-attachment: fixed;
 
     .wrapper {
-        margin: 100px auto 0;
-        .flex(row);
+        margin-top: 100px;
 
         .content {
+            padding: 20px 40px;
             background: fade(@light, 75%);
-            padding: 20px 5%;
-            border-radius: 10px;
-    
+            max-width: 80%;
+
+            h1 {
+                border-bottom: 3px dashed @orange;
+                margin-bottom: 20px;
+            }
+
             p {
+                text-align: right;
                 color: black;
             }
         }
@@ -47,12 +51,11 @@
 
 .details {
     .flex(row);
+    justify-content: space-evenly;
     
     div {
-        width: 25%;
-        margin: 40px 12.5%;
+        width: 35%;
         padding: 10px;
         border: 1px solid black;
-        border-radius: 10px;
     }
 }
