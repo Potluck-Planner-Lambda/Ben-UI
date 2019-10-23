@@ -217,12 +217,14 @@ footer {
   max-width: 80%;
 }
 .header .wrapper .content h1 {
+  padding-left: 10px;
   border-bottom: 3px dashed #EF4723;
   margin-bottom: 20px;
 }
 .header .wrapper .content p {
   text-align: right;
   color: black;
+  line-height: 2em;
 }
 .header .wrapper .content p img {
   vertical-align: middle;
