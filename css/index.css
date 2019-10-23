@@ -156,15 +156,6 @@ a {
 .below-nav {
   padding-top: 45px;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #EBEDF1;
-  background: #777E8C;
-  border-top: #B0B5BF solid 1px;
-  padding: 20px 0;
-}
 .nav {
   position: fixed;
   display: flex;
@@ -187,6 +178,15 @@ footer {
 }
 .nav nav a {
   margin: 0 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EBEDF1;
+  background: #777E8C;
+  border-top: #B0B5BF solid 1px;
+  padding: 20px 0;
 }
 .header {
   min-height: 100vh;
