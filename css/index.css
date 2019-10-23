@@ -137,16 +137,17 @@ body {
   font-family: museo-slab, serif;
   font-style: normal;
   font-weight: 300;
+  font-size: 20px;
 }
 h1 {
   font-size: 6em;
   color: #EF4723;
 }
 h2 {
-  font-size: 4em;
+  font-size: 3em;
 }
 h3 {
-  font-size: 3em;
+  font-size: 2em;
 }
 a {
   color: inherit;
@@ -156,14 +157,13 @@ a {
   padding-top: 45px;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #EBEDF1;
+  background: #777E8C;
+  border-top: #B0B5BF solid 1px;
+  padding: 20px 0;
 }
 .nav {
   position: fixed;
@@ -189,12 +189,36 @@ footer {
   margin: 0 10px;
 }
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  align-content: unset;
+  min-height: 100vh;
   background: url("../img/buffet.png");
   background-size: cover;
-  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header .wrapper {
+  margin: 100px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.header .wrapper .content {
+  background: rgba(235, 237, 241, 0.75);
+  padding: 20px 5%;
+  border-radius: 10px;
+}
+.header .wrapper .content p {
+  color: black;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.details div {
+  width: 25%;
+  margin: 40px 12.5%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
