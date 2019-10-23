@@ -1,29 +1,6 @@
-.nav {
-    position: fixed;
-    .flex(row);
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 65px;
-    width: 100%;
-    height: @nav-height;
-    background: @light;
-
-    img {
-        width: 115px;
-    }
-
-    nav {
-        .flex(row);
-
-        a {
-            margin: 0 10px;
-        }
-    }
-}
-
 .header {
     min-height: 100vh;
-    background: url("../img/buffet.png");
+    background: url("../img/Potluck.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,6 +14,7 @@
             max-width: 80%;
 
             h1 {
+                padding-left: 10px;
                 border-bottom: 3px dashed @orange;
                 margin-bottom: 20px;
             }
@@ -44,6 +22,12 @@
             p {
                 text-align: right;
                 color: black;
+                line-height: 2em;
+
+                img {
+                    vertical-align: middle;
+                    width: @text-size * 2;
+                }
             }
         }
     }

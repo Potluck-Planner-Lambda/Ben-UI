@@ -11,7 +11,7 @@ html, body {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: @text-size;
 }
 
 h1 {
@@ -21,10 +21,17 @@ h1 {
 
 h2 {
   font-size: 3em;
+  color: @orange;
 }
 
 h3 {
   font-size: 2em;
+  color: @orange;
+}
+
+h4 {
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
 a {
@@ -34,4 +41,13 @@ a {
 
 .below-nav {
   padding-top: @nav-height;
+}
+
+.emph {
+  color: @orange;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
 }
