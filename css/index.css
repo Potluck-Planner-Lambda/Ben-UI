@@ -145,9 +145,15 @@ h1 {
 }
 h2 {
   font-size: 3em;
+  color: #EF4723;
 }
 h3 {
   font-size: 2em;
+  color: #EF4723;
+}
+h4 {
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 a {
   color: inherit;
@@ -155,6 +161,13 @@ a {
 }
 .below-nav {
   padding-top: 60px;
+}
+.emph {
+  color: #EF4723;
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
 }
 .nav {
   position: fixed;
@@ -190,7 +203,7 @@ footer {
 }
 .header {
   min-height: 100vh;
-  background: url("../img/buffet.png");
+  background: url("../img/Buffet.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -210,6 +223,10 @@ footer {
 .header .wrapper .content p {
   text-align: right;
   color: black;
+}
+.header .wrapper .content p img {
+  vertical-align: middle;
+  width: 40px;
 }
 .details {
   display: flex;
