@@ -22,10 +22,40 @@
 }
 
 .header {
-    .flex(column);
-    justify-content: center;
-    align-content: center;
+    min-height: 100vh;
     background: url("../img/buffet.png");
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+
+    .wrapper {
+        margin-top: 100px;
+
+        .content {
+            padding: 20px 40px;
+            background: fade(@light, 75%);
+            max-width: 80%;
+
+            h1 {
+                border-bottom: 3px dashed @orange;
+                margin-bottom: 20px;
+            }
+
+            p {
+                text-align: right;
+                color: black;
+            }
+        }
+    }
+}
+
+.details {
+    .flex(row);
+    justify-content: space-evenly;
+    
+    div {
+        width: 35%;
+        padding: 10px;
+        border: 1px solid black;
+    }
 }
