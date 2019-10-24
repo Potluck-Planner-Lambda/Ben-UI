@@ -327,3 +327,23 @@ footer h4 {
 .signup div a:hover {
   background: #F2785B;
 }
+#about {
+  text-align: center;
+}
+#members {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#members li {
+  width: 300px;
+  margin: 25px;
+  padding: 25px;
+  background: #EBEDF1;
+}
+#members li img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #777E8C;
+}
