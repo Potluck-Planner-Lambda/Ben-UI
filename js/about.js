@@ -16,25 +16,15 @@ function textNode(data) {
 }
 
 function addUserData(user) {
-    let listItem = element("li");
-
-    let imgNode = element("img");
-    imgNode.setAttribute("src", user.avatar_url);
+    let template = document.getElementById("member-template")
+        .content
+        .cloneNode(true);
+    let root = template.querySelector(".member");
+    root.querySelector(".profile-icon").setAttribute("src", user.avatar_url);
+    root.querySelector(".profile-name").appendChild(textNode(user.name));
+    root.querySelector(".github-link").setAttribute("href", user.html_url);
     
-    let name = element("p");
-    let name_text = textNode(user.name);
-    name.appendChild(name_text);
-
-    let anchor = element("a");
-    anchor.setAttribute("href", user.html_url);
-    let anchor_text = textNode("Profile");
-    anchor.appendChild(anchor_text);
-
-    listItem.appendChild(imgNode);
-    listItem.appendChild(name);
-    listItem.appendChild(anchor);
-    
-    document.getElementById("members").appendChild(listItem);
+    document.getElementById("members").appendChild(root);
 }
 
 function load() {

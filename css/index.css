@@ -330,20 +330,44 @@ footer h4 {
 #about {
   text-align: center;
 }
+#about h2 {
+  background: #EF4723;
+  color: white;
+  padding: 10px 0 20px;
+}
 #members {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-#members li {
+.member {
   width: 300px;
   margin: 25px;
   padding: 25px;
   background: #EBEDF1;
 }
-#members li img {
+.member .profile-icon {
   width: 100%;
   border-radius: 50%;
   border: 2px solid #777E8C;
+}
+.member div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.member div .github-link {
+  padding: 5px;
+  border-radius: 50%;
+}
+.member div .github-link img {
+  width: 30px;
+  height: 30px;
+}
+.member div .github-link:hover {
+  background: #777E8C;
 }

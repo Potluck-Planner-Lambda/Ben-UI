@@ -1,21 +1,48 @@
 #about {
     text-align: center;
+
+    h2 {    
+        background: @orange;
+        color: white;
+        padding: 10px 0 20px;
+    }
 }
 
 #members {
     .flex(row);
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
 
-    li {
-        width: 300px;
-        margin: 25px;
-        padding: 25px;
-        background: @light;
+.member {
+    width: 300px;
+    margin: 25px;
+    padding: 25px;
+    background: @light;
 
-        img {
-            width: 100%;
+    .profile-icon {
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid @dark;
+    }
+
+    div {
+        .flex(row);
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        .github-link {
+            padding: 5px;
             border-radius: 50%;
-            border: 2px solid @dark;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .github-link:hover {
+            background: @dark;
         }
     }
 }
