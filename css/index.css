@@ -159,6 +159,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 .below-nav {
   padding-top: 60px;
 }
@@ -168,6 +171,16 @@ a {
 }
 .underline {
   text-decoration: underline;
+}
+@keyframes hover-underline {
+  from {
+    border-bottom: 1px solid black;
+  }
+  to {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+  }
 }
 .nav {
   position: fixed;
@@ -190,16 +203,30 @@ a {
   flex-direction: row;
 }
 .nav nav a {
-  margin: 0 10px;
+  margin: 0 30px;
+}
+.nav nav a:hover {
+  animation-name: hover-underline;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  text-decoration: none;
 }
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: #EBEDF1;
   background: #777E8C;
   border-top: #B0B5BF solid 1px;
   padding: 20px 0;
+  line-height: 1.2em;
+}
+footer img {
+  width: 115px;
+}
+footer h4 {
+  line-height: 2em;
 }
 .header {
   min-height: 100vh;
@@ -234,10 +261,69 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  border-top: solid #777E8C 1px;
 }
-.details div {
-  width: 35%;
+.details .item {
+  width: 50%;
+  height: 100vh;
+}
+.details .item .content {
+  background: rgba(235, 237, 241, 0.8);
   padding: 10px;
-  border: 1px solid black;
+  max-width: 500px;
+  margin-top: 30px;
+  margin-left: auto;
+  text-align: right;
+}
+.details .item .content h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.details .item .content p {
+  font-style: italic;
+}
+.details .guests {
+  background: url("../img/Gathering.png");
+  background-position: center;
+  background-size: cover;
+}
+.details .food {
+  background: url("../img/AssortedFoods.png");
+  background-position: center;
+  background-size: cover;
+}
+.signup {
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #EF4723;
+}
+.signup h2 {
+  padding: 40px 0;
+  color: #EBEDF1;
+}
+.signup div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background: #EBEDF1;
+  margin-left: 10%;
+  flex-grow: 1;
+  background: url("../img/CreateAccount.png"), linear-gradient(to top right, #B0B5BF, white);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
+.signup div a {
+  padding: 20px;
+  background: #EF4723;
+  color: #EBEDF1;
+}
+.signup div a:hover {
+  background: #F2785B;
 }

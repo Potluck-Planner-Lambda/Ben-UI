@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .below-nav {
   padding-top: @nav-height;
 }
@@ -50,4 +54,15 @@ a {
 
 .underline {
   text-decoration: underline;
+}
+
+@keyframes hover-underline {
+  from {
+    border-bottom: 1px solid black;
+  }
+  to {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+  }
 }

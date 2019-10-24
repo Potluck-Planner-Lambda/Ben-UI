@@ -35,11 +35,76 @@
 
 .details {
     .flex(row);
-    justify-content: space-evenly;
+    justify-content: center;
+    border-top: solid @dark 1px;
     
+    .item {
+        width: 50%;
+        height: 100vh;
+
+        .content {
+            background: fade(@light, 80%);
+            padding: 10px;
+            max-width: 500px;
+            margin-top: 30px;
+            margin-left: auto;
+            text-align: right;
+
+            h3 {
+                text-transform: uppercase;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    }
+
+    .guests {
+        background: url("../img/Gathering.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .food {
+        background: url("../img/AssortedFoods.png");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.signup {
+    padding-left: 40px;
+    .flex(row);
+    background: @orange;
+    
+    h2 {
+        padding: 40px 0;
+        color: @light;
+    }
+
     div {
-        width: 35%;
-        padding: 10px;
-        border: 1px solid black;
+        .flex(row);
+        justify-content: center;
+        align-content: center;
+        background: @light;
+        margin-left: 10%;
+        flex-grow: 1;
+        background: url("../img/CreateAccount.png"), linear-gradient(to top right, @medium, white);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: lighten;
+
+        a {
+            padding: 20px;
+            background: @orange;
+            color: @light;
+        }
+
+        a:hover {
+            background: @lightorange;
+        }
     }
 }
