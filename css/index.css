@@ -320,6 +320,11 @@ footer h4 {
   width: 50%;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .details .item {
+    width: 100%;
+  }
+}
 .details .item .content {
   background: rgba(235, 237, 241, 0.8);
   padding: 10px;
