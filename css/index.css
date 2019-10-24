@@ -165,6 +165,11 @@ a:hover {
 .below-nav {
   padding-top: 60px;
 }
+@media (max-width: 500px) {
+  .below-nav {
+    padding-top: 120px;
+  }
+}
 .emph {
   color: #EF4723;
   font-weight: bold;
@@ -182,6 +187,15 @@ a:hover {
     margin-bottom: -5px;
   }
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
 .nav {
   position: fixed;
   display: flex;
@@ -194,8 +208,20 @@ a:hover {
   height: 60px;
   background: #EBEDF1;
 }
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 120px;
+  }
+}
 .nav img {
   width: 115px;
+}
+@media (max-width: 500px) {
+  .nav img {
+    padding: 10px 0;
+  }
 }
 .nav nav {
   display: flex;
@@ -203,7 +229,7 @@ a:hover {
   flex-direction: row;
 }
 .nav nav a {
-  margin: 0 30px;
+  margin: 0 25px;
 }
 .nav nav a:hover {
   animation-name: hover-underline;
@@ -212,8 +238,28 @@ a:hover {
   animation-fill-mode: forwards;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .nav nav {
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+  }
+  .nav nav a {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    flex-grow: 1;
+  }
+  .nav nav a:hover {
+    animation: none;
+    background: #777E8C;
+    color: #EBEDF1;
+  }
+}
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   color: #EBEDF1;
@@ -221,6 +267,12 @@ footer {
   border-top: #B0B5BF solid 1px;
   padding: 20px 0;
   line-height: 1.2em;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 footer img {
   width: 115px;
@@ -305,6 +357,18 @@ footer h4 {
   padding: 40px 0;
   color: #EBEDF1;
 }
+@media (max-width: 800px) {
+  .signup h2 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .signup {
+    display: block;
+    padding-left: 0;
+  }
+}
 .signup div {
   display: flex;
   flex-wrap: wrap;
@@ -318,6 +382,12 @@ footer h4 {
   background-size: cover;
   background-position: center;
   background-blend-mode: lighten;
+}
+@media (max-width: 800px) {
+  .signup div {
+    margin-left: 0;
+    padding: 50px 0;
+  }
 }
 .signup div a {
   padding: 20px;

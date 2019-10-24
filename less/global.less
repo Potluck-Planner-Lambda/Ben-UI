@@ -45,6 +45,10 @@ a:hover {
 
 .below-nav {
   padding-top: @nav-height;
+
+  @media @mobile {
+    padding-top: @nav-height-mobile;
+  }
 }
 
 .emph {
@@ -64,5 +68,16 @@ a:hover {
     border-bottom: 2px solid black;
     padding-bottom: 5px;
     margin-bottom: -5px;
+  }
+}
+
+@media @tablet {
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .desktop-only {
+    display: none;
   }
 }

@@ -8,15 +8,25 @@
     height: @nav-height;
     background: @light;
 
+    @media @mobile {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: @nav-height-mobile;
+    }
+
     img {
         width: 115px;
+
+        @media @mobile {
+            padding: 10px 0;
+        }
     }
 
     nav {
         .flex(row);
 
         a {
-            margin: 0 30px;
+            margin: 0 25px;
         }
 
         a:hover {
@@ -25,6 +35,26 @@
             animation-timing-function: linear;
             animation-fill-mode: forwards;
             text-decoration: none;
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            flex-grow: 1;
+            text-align: center;
+            width: 100%;
+
+            a {
+                margin: 0;
+                padding: 5px 0;
+                width: 100%;
+                flex-grow: 1;
+            }
+
+            a:hover {
+                animation: none;
+                background: @dark;
+                color: @light;
+            }
         }
     }
 }
