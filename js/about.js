@@ -3,8 +3,7 @@ const teamGitHubHandles = [
     'calebredd',
     'cnlien',
     'elijahdaniel',
-    'LeTanque',
-    'Tereamarie'
+    'LeTanque'
 ];
 
 function element(name) {
